@@ -9,7 +9,6 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.steve.networksocial.presentation.components.StandardScaffold
@@ -36,7 +35,7 @@ class MainActivity : ComponentActivity() {
                         navController = navController,
                         showBottomBar = navBackStackEntry?.destination?.route in listOf(
                             Screen.MainFeedScreen.route,
-                            Screen.ChatScreen.route,
+                             Screen.ChatScreen.route,
                             Screen.ActivityScreen.route,
                             Screen.ProfileScreen.route,
                         ),
